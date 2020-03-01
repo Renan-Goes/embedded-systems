@@ -82,7 +82,7 @@ void connectToWiFi(char const *ssid, char const *password) {
 void readSensors(struct readings *r) {
 
   #ifdef DONT_HAVE_SENSORS
-    if (readings.waterFlow > 0 && readings.waterFlow < 100000)
+    if (readings.waterFlow > 0 && readings.waterFlow < 2000)
     {
       readings.shower = 1;
     }
